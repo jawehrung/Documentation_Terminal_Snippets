@@ -133,8 +133,8 @@ fi
 ## Default Snippets
 
 The plugin comes with two example snippets:
-- **Set JAVA_HOME** (Category: Environment)
-- **gradlew clean build** (Category: Build)
+- **Pip Upgrade** (Category: Python)
+- **Git Status** (Category: Git)
 
 ## Terminal Compatibility
 
