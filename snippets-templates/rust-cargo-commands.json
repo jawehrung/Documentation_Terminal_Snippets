@@ -1,0 +1,114 @@
+[
+  {
+    "id": "cargo-1",
+    "name": "Cargo New Project",
+    "command": "cargo new ${VAR:Project name}",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-2",
+    "name": "Cargo Build",
+    "command": "cargo build",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-3",
+    "name": "Cargo Build Release",
+    "command": "cargo build --release",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-4",
+    "name": "Cargo Run",
+    "command": "cargo run",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-5",
+    "name": "Cargo Run Release",
+    "command": "cargo run --release",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-6",
+    "name": "Cargo Test",
+    "command": "cargo test",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-7",
+    "name": "Cargo Test Specific",
+    "command": "cargo test ${VAR:Test name}",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-8",
+    "name": "Cargo Check",
+    "command": "cargo check",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-9",
+    "name": "Cargo Clean",
+    "command": "cargo clean",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-10",
+    "name": "Cargo Add Dependency",
+    "command": "cargo add ${VAR:Crate name}",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-11",
+    "name": "Cargo Update",
+    "command": "cargo update",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-12",
+    "name": "Cargo Doc",
+    "command": "cargo doc --open",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-13",
+    "name": "Cargo Publish",
+    "command": "cargo publish",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-14",
+    "name": "Cargo Fmt",
+    "command": "cargo fmt",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-15",
+    "name": "Cargo Clippy",
+    "command": "cargo clippy",
+    "description": "",
+    "category": "Rust/Cargo"
+  },
+  {
+    "id": "cargo-16",
+    "name": "Rustc Version",
+    "command": "rustc --version",
+    "description": "",
+    "category": "Rust/Cargo"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "mysql-1",
+    "name": "MySQL Connect",
+    "command": "mysql -u ${VAR:Username:root} -p",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-2",
+    "name": "MySQL Connect Database",
+    "command": "mysql -u ${VAR:Username:root} -p ${VAR:Database name}",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-3",
+    "name": "MySQL Connect Host",
+    "command": "mysql -h ${VAR:Host:localhost} -P ${VAR:Port:3306} -u ${VAR:Username:root} -p",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-4",
+    "name": "MySQL Execute SQL File",
+    "command": "mysql -u ${VAR:Username:root} -p ${VAR:Database name} < ${VAR:SQL file path}",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-5",
+    "name": "MySQL Dump Database",
+    "command": "mysqldump -u ${VAR:Username:root} -p ${VAR:Database name} > ${VAR:Output file:backup.sql}",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-6",
+    "name": "MySQL Dump All Databases",
+    "command": "mysqldump -u ${VAR:Username:root} -p --all-databases > ${VAR:Output file:all_databases.sql}",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-7",
+    "name": "MySQL Restore Database",
+    "command": "mysql -u ${VAR:Username:root} -p ${VAR:Database name} < ${VAR:Backup file}",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-8",
+    "name": "MySQL Create Database",
+    "command": "mysql -u ${VAR:Username:root} -p -e \"CREATE DATABASE ${VAR:Database name};\"",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-9",
+    "name": "MySQL Drop Database",
+    "command": "mysql -u ${VAR:Username:root} -p -e \"DROP DATABASE ${VAR:Database name};\"",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-10",
+    "name": "MySQL Show Databases",
+    "command": "mysql -u ${VAR:Username:root} -p -e \"SHOW DATABASES;\"",
+    "description": "",
+    "category": "MySQL"
+  },
+  {
+    "id": "mysql-11",
+    "name": "MySQL Execute Query",
+    "command": "mysql -u ${VAR:Username:root} -p ${VAR:Database name} -e \"${VAR:SQL query}\"",
+    "description": "",
+    "category": "MySQL"
+  }
+]

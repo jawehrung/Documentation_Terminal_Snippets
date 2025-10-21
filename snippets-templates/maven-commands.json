@@ -1,0 +1,114 @@
+[
+  {
+    "id": "maven-1",
+    "name": "Maven Clean Install",
+    "command": "mvn clean install",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-2",
+    "name": "Maven Clean",
+    "command": "mvn clean",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-3",
+    "name": "Maven Compile",
+    "command": "mvn compile",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-4",
+    "name": "Maven Test",
+    "command": "mvn test",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-5",
+    "name": "Maven Package",
+    "command": "mvn package",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-6",
+    "name": "Maven Install",
+    "command": "mvn install",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-7",
+    "name": "Maven Deploy",
+    "command": "mvn deploy",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-8",
+    "name": "Maven Verify",
+    "command": "mvn verify",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-9",
+    "name": "Maven Dependency Tree",
+    "command": "mvn dependency:tree",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-10",
+    "name": "Maven Dependency Analyze",
+    "command": "mvn dependency:analyze",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-11",
+    "name": "Maven Skip Tests",
+    "command": "mvn clean install -DskipTests",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-12",
+    "name": "Maven Specific Test",
+    "command": "mvn test -Dtest=${VAR:Test class name}",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-13",
+    "name": "Maven Update Dependencies",
+    "command": "mvn clean install -U",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-14",
+    "name": "Maven Effective POM",
+    "command": "mvn help:effective-pom",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-15",
+    "name": "Maven Spring Boot Run",
+    "command": "mvn spring-boot:run",
+    "description": "",
+    "category": "Maven"
+  },
+  {
+    "id": "maven-16",
+    "name": "Maven Versions Display",
+    "command": "mvn versions:display-dependency-updates",
+    "description": "",
+    "category": "Maven"
+  }
+]

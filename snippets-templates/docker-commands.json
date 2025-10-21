@@ -1,0 +1,142 @@
+[
+  {
+    "id": "docker-1",
+    "name": "Docker Build",
+    "command": "docker build -t ${VAR:Image name} .",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-2",
+    "name": "Docker Run",
+    "command": "docker run -d -p ${VAR:Host port:8080}:${VAR:Container port:8080} --name ${VAR:Container name} ${VAR:Image name}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-3",
+    "name": "Docker Run Interactive",
+    "command": "docker run -it ${VAR:Image name} /bin/bash",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-4",
+    "name": "Docker PS",
+    "command": "docker ps",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-5",
+    "name": "Docker PS All",
+    "command": "docker ps -a",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-6",
+    "name": "Docker Stop",
+    "command": "docker stop ${VAR:Container name or ID}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-7",
+    "name": "Docker Start",
+    "command": "docker start ${VAR:Container name or ID}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-8",
+    "name": "Docker Restart",
+    "command": "docker restart ${VAR:Container name or ID}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-9",
+    "name": "Docker Remove Container",
+    "command": "docker rm ${VAR:Container name or ID}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-10",
+    "name": "Docker Remove Image",
+    "command": "docker rmi ${VAR:Image name or ID}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-11",
+    "name": "Docker Logs",
+    "command": "docker logs ${VAR:Container name or ID}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-12",
+    "name": "Docker Logs Follow",
+    "command": "docker logs -f ${VAR:Container name or ID}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-13",
+    "name": "Docker Exec",
+    "command": "docker exec -it ${VAR:Container name or ID} /bin/bash",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-14",
+    "name": "Docker Images",
+    "command": "docker images",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-15",
+    "name": "Docker Pull",
+    "command": "docker pull ${VAR:Image name}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-16",
+    "name": "Docker Push",
+    "command": "docker push ${VAR:Image name}",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-17",
+    "name": "Docker Compose Up",
+    "command": "docker-compose up -d",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-18",
+    "name": "Docker Compose Down",
+    "command": "docker-compose down",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-19",
+    "name": "Docker Compose Logs",
+    "command": "docker-compose logs -f",
+    "description": "",
+    "category": "Docker"
+  },
+  {
+    "id": "docker-20",
+    "name": "Docker System Prune",
+    "command": "docker system prune -a",
+    "description": "",
+    "category": "Docker"
+  }
+]

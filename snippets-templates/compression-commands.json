@@ -1,0 +1,86 @@
+[
+  {
+    "id": "compress-1",
+    "name": "Zip Create",
+    "command": "zip -r ${VAR:Archive name:archive.zip} ${VAR:Files or directory}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-2",
+    "name": "Zip Extract",
+    "command": "unzip ${VAR:Archive name}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-3",
+    "name": "Zip Extract to Directory",
+    "command": "unzip ${VAR:Archive name} -d ${VAR:Destination directory}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-4",
+    "name": "Tar Create",
+    "command": "tar -czf ${VAR:Archive name:archive.tar.gz} ${VAR:Files or directory}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-5",
+    "name": "Tar Extract",
+    "command": "tar -xzf ${VAR:Archive name}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-6",
+    "name": "Tar Extract to Directory",
+    "command": "tar -xzf ${VAR:Archive name} -C ${VAR:Destination directory}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-7",
+    "name": "Tar List Contents",
+    "command": "tar -tzf ${VAR:Archive name}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-8",
+    "name": "Gzip Compress",
+    "command": "gzip ${VAR:File name}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-9",
+    "name": "Gzip Decompress",
+    "command": "gunzip ${VAR:File name.gz}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-10",
+    "name": "7z Create",
+    "command": "7z a ${VAR:Archive name:archive.7z} ${VAR:Files or directory}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-11",
+    "name": "7z Extract",
+    "command": "7z x ${VAR:Archive name}",
+    "description": "",
+    "category": "Compression"
+  },
+  {
+    "id": "compress-12",
+    "name": "7z List Contents",
+    "command": "7z l ${VAR:Archive name}",
+    "description": "",
+    "category": "Compression"
+  }
+]

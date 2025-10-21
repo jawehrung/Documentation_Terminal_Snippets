@@ -1,0 +1,107 @@
+[
+  {
+    "id": "k8s-1",
+    "name": "Kubectl Get Pods",
+    "command": "kubectl get pods",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-2",
+    "name": "Kubectl Get Services",
+    "command": "kubectl get services",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-3",
+    "name": "Kubectl Get Deployments",
+    "command": "kubectl get deployments",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-4",
+    "name": "Kubectl Describe Pod",
+    "command": "kubectl describe pod ${VAR:Pod name}",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-5",
+    "name": "Kubectl Logs",
+    "command": "kubectl logs ${VAR:Pod name}",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-6",
+    "name": "Kubectl Logs Follow",
+    "command": "kubectl logs -f ${VAR:Pod name}",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-7",
+    "name": "Kubectl Apply",
+    "command": "kubectl apply -f ${VAR:File path}",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-8",
+    "name": "Kubectl Delete",
+    "command": "kubectl delete -f ${VAR:File path}",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-9",
+    "name": "Kubectl Exec",
+    "command": "kubectl exec -it ${VAR:Pod name} -- /bin/bash",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-10",
+    "name": "Kubectl Port Forward",
+    "command": "kubectl port-forward ${VAR:Pod name} ${VAR:Local port:8080}:${VAR:Pod port:8080}",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-11",
+    "name": "Kubectl Get Namespaces",
+    "command": "kubectl get namespaces",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-12",
+    "name": "Kubectl Set Namespace",
+    "command": "kubectl config set-context --current --namespace=${VAR:Namespace}",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-13",
+    "name": "Kubectl Scale Deployment",
+    "command": "kubectl scale deployment ${VAR:Deployment name} --replicas=${VAR:Replicas:3}",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-14",
+    "name": "Kubectl Rollout Status",
+    "command": "kubectl rollout status deployment/${VAR:Deployment name}",
+    "description": "",
+    "category": "Kubernetes"
+  },
+  {
+    "id": "k8s-15",
+    "name": "Kubectl Get All",
+    "command": "kubectl get all",
+    "description": "",
+    "category": "Kubernetes"
+  }
+]

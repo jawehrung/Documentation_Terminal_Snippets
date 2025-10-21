@@ -1,0 +1,128 @@
+[
+  {
+    "id": "pip-1",
+    "name": "Pip Install Package",
+    "command": "pip install ${VAR:Package name}",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-2",
+    "name": "Pip Install Requirements",
+    "command": "pip install -r requirements.txt",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-3",
+    "name": "Pip Uninstall Package",
+    "command": "pip uninstall ${VAR:Package name} -y",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-4",
+    "name": "Pip List Packages",
+    "command": "pip list",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-5",
+    "name": "Pip Show Package",
+    "command": "pip show ${VAR:Package name}",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-6",
+    "name": "Pip Freeze",
+    "command": "pip freeze > requirements.txt",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-7",
+    "name": "Pip Upgrade Package",
+    "command": "pip install --upgrade ${VAR:Package name}",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-8",
+    "name": "Pip Upgrade Pip",
+    "command": "python -m pip install --upgrade pip",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-9",
+    "name": "Pip Search Package",
+    "command": "pip search ${VAR:Search term}",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-10",
+    "name": "Create Virtual Environment",
+    "command": "python -m venv ${VAR:Environment name:venv}",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-11",
+    "name": "Activate Virtual Environment (Windows)",
+    "command": "${VAR:Environment name:venv}\\Scripts\\activate",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-12",
+    "name": "Activate Virtual Environment (Linux/Mac)",
+    "command": "source ${VAR:Environment name:venv}/bin/activate",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-13",
+    "name": "Deactivate Virtual Environment",
+    "command": "deactivate",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-14",
+    "name": "Python Run Script",
+    "command": "python ${VAR:Script name:main.py}",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-15",
+    "name": "Python Version",
+    "command": "python --version",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-16",
+    "name": "Pip Check Dependencies",
+    "command": "pip check",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-17",
+    "name": "Pip Install Editable",
+    "command": "pip install -e .",
+    "description": "",
+    "category": "Python/Pip"
+  },
+  {
+    "id": "pip-18",
+    "name": "Pytest Run Tests",
+    "command": "pytest ${VAR:Test path:tests/}",
+    "description": "",
+    "category": "Python/Pip"
+  }
+]

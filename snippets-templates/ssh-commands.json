@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ssh-1",
+    "name": "SSH Connect",
+    "command": "ssh ${VAR:Username}@${VAR:Host}",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-2",
+    "name": "SSH Connect with Port",
+    "command": "ssh -p ${VAR:Port:22} ${VAR:Username}@${VAR:Host}",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-3",
+    "name": "SSH Connect with Key",
+    "command": "ssh -i ${VAR:Key file path} ${VAR:Username}@${VAR:Host}",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-4",
+    "name": "SCP Copy to Remote",
+    "command": "scp ${VAR:Local file} ${VAR:Username}@${VAR:Host}:${VAR:Remote path}",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-5",
+    "name": "SCP Copy from Remote",
+    "command": "scp ${VAR:Username}@${VAR:Host}:${VAR:Remote file} ${VAR:Local path}",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-6",
+    "name": "SCP Copy Directory",
+    "command": "scp -r ${VAR:Local directory} ${VAR:Username}@${VAR:Host}:${VAR:Remote path}",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-7",
+    "name": "SSH Keygen",
+    "command": "ssh-keygen -t rsa -b 4096 -C \"${VAR:Email or comment}\"",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-8",
+    "name": "SSH Copy ID",
+    "command": "ssh-copy-id ${VAR:Username}@${VAR:Host}",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-9",
+    "name": "SSH Tunnel Local",
+    "command": "ssh -L ${VAR:Local port}:localhost:${VAR:Remote port} ${VAR:Username}@${VAR:Host}",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-10",
+    "name": "SSH Execute Command",
+    "command": "ssh ${VAR:Username}@${VAR:Host} \"${VAR:Command}\"",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-11",
+    "name": "SFTP Connect",
+    "command": "sftp ${VAR:Username}@${VAR:Host}",
+    "description": "",
+    "category": "SSH"
+  },
+  {
+    "id": "ssh-12",
+    "name": "Rsync to Remote",
+    "command": "rsync -avz ${VAR:Local path} ${VAR:Username}@${VAR:Host}:${VAR:Remote path}",
+    "description": "",
+    "category": "SSH"
+  }
+]

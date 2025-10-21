@@ -1,0 +1,107 @@
+[
+  {
+    "id": "aws-1",
+    "name": "AWS S3 List Buckets",
+    "command": "aws s3 ls",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-2",
+    "name": "AWS S3 List Bucket Contents",
+    "command": "aws s3 ls s3://${VAR:Bucket name}",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-3",
+    "name": "AWS S3 Copy to S3",
+    "command": "aws s3 cp ${VAR:Local file} s3://${VAR:Bucket name}/${VAR:S3 path}",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-4",
+    "name": "AWS S3 Sync",
+    "command": "aws s3 sync ${VAR:Local directory} s3://${VAR:Bucket name}",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-5",
+    "name": "AWS EC2 Describe Instances",
+    "command": "aws ec2 describe-instances",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-6",
+    "name": "AWS EC2 Start Instance",
+    "command": "aws ec2 start-instances --instance-ids ${VAR:Instance ID}",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-7",
+    "name": "AWS EC2 Stop Instance",
+    "command": "aws ec2 stop-instances --instance-ids ${VAR:Instance ID}",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-8",
+    "name": "AWS Lambda List Functions",
+    "command": "aws lambda list-functions",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-9",
+    "name": "AWS Lambda Invoke",
+    "command": "aws lambda invoke --function-name ${VAR:Function name} output.json",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-10",
+    "name": "AWS CloudFormation List Stacks",
+    "command": "aws cloudformation list-stacks",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-11",
+    "name": "AWS CloudFormation Create Stack",
+    "command": "aws cloudformation create-stack --stack-name ${VAR:Stack name} --template-body file://${VAR:Template file}",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-12",
+    "name": "AWS CloudFormation Delete Stack",
+    "command": "aws cloudformation delete-stack --stack-name ${VAR:Stack name}",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-13",
+    "name": "AWS ECS List Clusters",
+    "command": "aws ecs list-clusters",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-14",
+    "name": "AWS Configure",
+    "command": "aws configure",
+    "description": "",
+    "category": "AWS"
+  },
+  {
+    "id": "aws-15",
+    "name": "AWS Get Caller Identity",
+    "command": "aws sts get-caller-identity",
+    "description": "",
+    "category": "AWS"
+  }
+]

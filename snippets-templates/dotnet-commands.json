@@ -1,0 +1,114 @@
+[
+  {
+    "id": "dotnet-1",
+    "name": "Dotnet New Console",
+    "command": "dotnet new console -n ${VAR:Project name}",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-2",
+    "name": "Dotnet New Web API",
+    "command": "dotnet new webapi -n ${VAR:Project name}",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-3",
+    "name": "Dotnet Build",
+    "command": "dotnet build",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-4",
+    "name": "Dotnet Run",
+    "command": "dotnet run",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-5",
+    "name": "Dotnet Test",
+    "command": "dotnet test",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-6",
+    "name": "Dotnet Publish",
+    "command": "dotnet publish -c Release",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-7",
+    "name": "Dotnet Clean",
+    "command": "dotnet clean",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-8",
+    "name": "Dotnet Restore",
+    "command": "dotnet restore",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-9",
+    "name": "Dotnet Add Package",
+    "command": "dotnet add package ${VAR:Package name}",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-10",
+    "name": "Dotnet Remove Package",
+    "command": "dotnet remove package ${VAR:Package name}",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-11",
+    "name": "Dotnet List Packages",
+    "command": "dotnet list package",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-12",
+    "name": "Dotnet Watch Run",
+    "command": "dotnet watch run",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-13",
+    "name": "Dotnet EF Migrations Add",
+    "command": "dotnet ef migrations add ${VAR:Migration name}",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-14",
+    "name": "Dotnet EF Database Update",
+    "command": "dotnet ef database update",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-15",
+    "name": "Dotnet Version",
+    "command": "dotnet --version",
+    "description": "",
+    "category": ".NET"
+  },
+  {
+    "id": "dotnet-16",
+    "name": "Dotnet Info",
+    "command": "dotnet --info",
+    "description": "",
+    "category": ".NET"
+  }
+]

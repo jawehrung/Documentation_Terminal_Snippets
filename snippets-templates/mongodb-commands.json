@@ -1,0 +1,72 @@
+[
+  {
+    "id": "mongo-1",
+    "name": "Mongosh Connect",
+    "command": "mongosh",
+    "description": "",
+    "category": "MongoDB"
+  },
+  {
+    "id": "mongo-2",
+    "name": "Mongosh Connect Database",
+    "command": "mongosh ${VAR:Database name}",
+    "description": "",
+    "category": "MongoDB"
+  },
+  {
+    "id": "mongo-3",
+    "name": "Mongosh Connect URI",
+    "command": "mongosh \"${VAR:Connection URI}\"",
+    "description": "",
+    "category": "MongoDB"
+  },
+  {
+    "id": "mongo-4",
+    "name": "Mongosh Connect Host",
+    "command": "mongosh --host ${VAR:Host:localhost} --port ${VAR:Port:27017}",
+    "description": "",
+    "category": "MongoDB"
+  },
+  {
+    "id": "mongo-5",
+    "name": "Mongodump Database",
+    "command": "mongodump --db ${VAR:Database name} --out ${VAR:Output directory:./backup}",
+    "description": "",
+    "category": "MongoDB"
+  },
+  {
+    "id": "mongo-6",
+    "name": "Mongodump All",
+    "command": "mongodump --out ${VAR:Output directory:./backup}",
+    "description": "",
+    "category": "MongoDB"
+  },
+  {
+    "id": "mongo-7",
+    "name": "Mongorestore Database",
+    "command": "mongorestore --db ${VAR:Database name} ${VAR:Backup directory}",
+    "description": "",
+    "category": "MongoDB"
+  },
+  {
+    "id": "mongo-8",
+    "name": "Mongoexport Collection",
+    "command": "mongoexport --db ${VAR:Database name} --collection ${VAR:Collection name} --out ${VAR:Output file:export.json}",
+    "description": "",
+    "category": "MongoDB"
+  },
+  {
+    "id": "mongo-9",
+    "name": "Mongoimport Collection",
+    "command": "mongoimport --db ${VAR:Database name} --collection ${VAR:Collection name} --file ${VAR:Input file}",
+    "description": "",
+    "category": "MongoDB"
+  },
+  {
+    "id": "mongo-10",
+    "name": "Mongo Show Databases",
+    "command": "mongosh --eval \"show dbs\"",
+    "description": "",
+    "category": "MongoDB"
+  }
+]

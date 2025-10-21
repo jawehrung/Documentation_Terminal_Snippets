@@ -1,0 +1,72 @@
+[
+  {
+    "id": "postgres-1",
+    "name": "PSQL Connect",
+    "command": "psql -U ${VAR:Username:postgres} -d ${VAR:Database name}",
+    "description": "",
+    "category": "PostgreSQL"
+  },
+  {
+    "id": "postgres-2",
+    "name": "PSQL Connect Host",
+    "command": "psql -h ${VAR:Host:localhost} -p ${VAR:Port:5432} -U ${VAR:Username:postgres} -d ${VAR:Database name}",
+    "description": "",
+    "category": "PostgreSQL"
+  },
+  {
+    "id": "postgres-3",
+    "name": "PSQL List Databases",
+    "command": "psql -U ${VAR:Username:postgres} -c \"\\l\"",
+    "description": "",
+    "category": "PostgreSQL"
+  },
+  {
+    "id": "postgres-4",
+    "name": "PSQL Execute SQL File",
+    "command": "psql -U ${VAR:Username:postgres} -d ${VAR:Database name} -f ${VAR:SQL file path}",
+    "description": "",
+    "category": "PostgreSQL"
+  },
+  {
+    "id": "postgres-5",
+    "name": "PG Dump Database",
+    "command": "pg_dump -U ${VAR:Username:postgres} ${VAR:Database name} > ${VAR:Output file:backup.sql}",
+    "description": "",
+    "category": "PostgreSQL"
+  },
+  {
+    "id": "postgres-6",
+    "name": "PG Dump with Compression",
+    "command": "pg_dump -U ${VAR:Username:postgres} -Fc ${VAR:Database name} > ${VAR:Output file:backup.dump}",
+    "description": "",
+    "category": "PostgreSQL"
+  },
+  {
+    "id": "postgres-7",
+    "name": "PG Restore",
+    "command": "pg_restore -U ${VAR:Username:postgres} -d ${VAR:Database name} ${VAR:Backup file}",
+    "description": "",
+    "category": "PostgreSQL"
+  },
+  {
+    "id": "postgres-8",
+    "name": "Create Database",
+    "command": "createdb -U ${VAR:Username:postgres} ${VAR:Database name}",
+    "description": "",
+    "category": "PostgreSQL"
+  },
+  {
+    "id": "postgres-9",
+    "name": "Drop Database",
+    "command": "dropdb -U ${VAR:Username:postgres} ${VAR:Database name}",
+    "description": "",
+    "category": "PostgreSQL"
+  },
+  {
+    "id": "postgres-10",
+    "name": "PSQL Execute Query",
+    "command": "psql -U ${VAR:Username:postgres} -d ${VAR:Database name} -c \"${VAR:SQL query}\"",
+    "description": "",
+    "category": "PostgreSQL"
+  }
+]

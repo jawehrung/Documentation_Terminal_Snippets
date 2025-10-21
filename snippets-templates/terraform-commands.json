@@ -1,0 +1,107 @@
+[
+  {
+    "id": "terraform-1",
+    "name": "Terraform Init",
+    "command": "terraform init",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-2",
+    "name": "Terraform Plan",
+    "command": "terraform plan",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-3",
+    "name": "Terraform Apply",
+    "command": "terraform apply",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-4",
+    "name": "Terraform Apply Auto Approve",
+    "command": "terraform apply -auto-approve",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-5",
+    "name": "Terraform Destroy",
+    "command": "terraform destroy",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-6",
+    "name": "Terraform Destroy Auto Approve",
+    "command": "terraform destroy -auto-approve",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-7",
+    "name": "Terraform Validate",
+    "command": "terraform validate",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-8",
+    "name": "Terraform Format",
+    "command": "terraform fmt",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-9",
+    "name": "Terraform Show",
+    "command": "terraform show",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-10",
+    "name": "Terraform State List",
+    "command": "terraform state list",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-11",
+    "name": "Terraform Output",
+    "command": "terraform output",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-12",
+    "name": "Terraform Refresh",
+    "command": "terraform refresh",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-13",
+    "name": "Terraform Import",
+    "command": "terraform import ${VAR:Resource address} ${VAR:Resource ID}",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-14",
+    "name": "Terraform Workspace List",
+    "command": "terraform workspace list",
+    "description": "",
+    "category": "Terraform"
+  },
+  {
+    "id": "terraform-15",
+    "name": "Terraform Workspace New",
+    "command": "terraform workspace new ${VAR:Workspace name}",
+    "description": "",
+    "category": "Terraform"
+  }
+]

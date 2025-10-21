@@ -1,0 +1,114 @@
+[
+  {
+    "id": "go-1",
+    "name": "Go Run",
+    "command": "go run ${VAR:File name:main.go}",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-2",
+    "name": "Go Build",
+    "command": "go build",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-3",
+    "name": "Go Build Output",
+    "command": "go build -o ${VAR:Output name}",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-4",
+    "name": "Go Test",
+    "command": "go test",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-5",
+    "name": "Go Test Verbose",
+    "command": "go test -v",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-6",
+    "name": "Go Test Coverage",
+    "command": "go test -cover",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-7",
+    "name": "Go Mod Init",
+    "command": "go mod init ${VAR:Module name}",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-8",
+    "name": "Go Mod Tidy",
+    "command": "go mod tidy",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-9",
+    "name": "Go Mod Download",
+    "command": "go mod download",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-10",
+    "name": "Go Get Package",
+    "command": "go get ${VAR:Package path}",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-11",
+    "name": "Go Install",
+    "command": "go install",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-12",
+    "name": "Go Fmt",
+    "command": "go fmt ./...",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-13",
+    "name": "Go Vet",
+    "command": "go vet ./...",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-14",
+    "name": "Go Clean",
+    "command": "go clean",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-15",
+    "name": "Go Version",
+    "command": "go version",
+    "description": "",
+    "category": "Go"
+  },
+  {
+    "id": "go-16",
+    "name": "Go List Packages",
+    "command": "go list ./...",
+    "description": "",
+    "category": "Go"
+  }
+]

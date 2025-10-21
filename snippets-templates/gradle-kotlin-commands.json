@@ -1,0 +1,156 @@
+[
+  {
+    "id": "gradle-1",
+    "name": "Gradle Clean Build",
+    "command": "gradlew clean build",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-2",
+    "name": "Gradle Build",
+    "command": "gradlew build",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-3",
+    "name": "Gradle Clean",
+    "command": "gradlew clean",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-4",
+    "name": "Gradle Test",
+    "command": "gradlew test",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-5",
+    "name": "Gradle Run",
+    "command": "gradlew run",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-6",
+    "name": "Gradle Build Plugin",
+    "command": "gradlew buildPlugin",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-7",
+    "name": "Gradle Run IDE",
+    "command": "gradlew runIde",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-8",
+    "name": "Gradle Tasks",
+    "command": "gradlew tasks",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-9",
+    "name": "Gradle Dependencies",
+    "command": "gradlew dependencies",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-10",
+    "name": "Gradle Assemble",
+    "command": "gradlew assemble",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-11",
+    "name": "Gradle Check",
+    "command": "gradlew check",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-12",
+    "name": "Gradle Verify Plugin",
+    "command": "gradlew verifyPlugin",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-13",
+    "name": "Gradle Publish Plugin",
+    "command": "gradlew publishPlugin",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-14",
+    "name": "Gradle Specific Task",
+    "command": "gradlew ${VAR:Task name}",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-15",
+    "name": "Gradle Build with Args",
+    "command": "gradlew build ${VAR:Additional arguments:--info}",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-16",
+    "name": "Gradle Clean Build No Cache",
+    "command": "gradlew clean build --no-configuration-cache",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-17",
+    "name": "Gradle Refresh Dependencies",
+    "command": "gradlew build --refresh-dependencies",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-18",
+    "name": "Gradle Wrapper Update",
+    "command": "gradlew wrapper --gradle-version ${VAR:Gradle version:8.5}",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-19",
+    "name": "Kotlin Compile",
+    "command": "gradlew compileKotlin",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-20",
+    "name": "Gradle Build with Stacktrace",
+    "command": "gradlew build --stacktrace",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-21",
+    "name": "Gradle Build Scan",
+    "command": "gradlew build --scan",
+    "description": "",
+    "category": "Gradle"
+  },
+  {
+    "id": "gradle-22",
+    "name": "IntelliJ Plugin - Build & Run",
+    "command": "gradlew clean buildPlugin runIde",
+    "description": "",
+    "category": "Gradle"
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "npm-1",
+    "name": "NPM Install",
+    "command": "npm install",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-2",
+    "name": "NPM Install Package",
+    "command": "npm install ${VAR:Package name}",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-3",
+    "name": "NPM Install Dev Package",
+    "command": "npm install --save-dev ${VAR:Package name}",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-4",
+    "name": "NPM Uninstall Package",
+    "command": "npm uninstall ${VAR:Package name}",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-5",
+    "name": "NPM Run Script",
+    "command": "npm run ${VAR:Script name}",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-6",
+    "name": "NPM Start",
+    "command": "npm start",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-7",
+    "name": "NPM Test",
+    "command": "npm test",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-8",
+    "name": "NPM Build",
+    "command": "npm run build",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-9",
+    "name": "NPM Update",
+    "command": "npm update",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-10",
+    "name": "NPM Outdated",
+    "command": "npm outdated",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-11",
+    "name": "NPM List",
+    "command": "npm list --depth=${VAR:Depth:0}",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-12",
+    "name": "NPM Init",
+    "command": "npm init -y",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-13",
+    "name": "NPM Audit",
+    "command": "npm audit",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-14",
+    "name": "NPM Audit Fix",
+    "command": "npm audit fix",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-15",
+    "name": "NPM Cache Clean",
+    "command": "npm cache clean --force",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-16",
+    "name": "NPM Publish",
+    "command": "npm publish",
+    "description": "",
+    "category": "NPM"
+  },
+  {
+    "id": "npm-17",
+    "name": "NPX Run Package",
+    "command": "npx ${VAR:Package name}",
+    "description": "",
+    "category": "NPM"
+  }
+]

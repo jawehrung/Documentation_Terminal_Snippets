@@ -1,0 +1,128 @@
+[
+  {
+    "id": "sys-1",
+    "name": "List Files Detailed",
+    "command": "ls -lah",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-2",
+    "name": "Disk Usage",
+    "command": "df -h",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-3",
+    "name": "Directory Size",
+    "command": "du -sh ${VAR:Directory path:.}",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-4",
+    "name": "Find Files by Name",
+    "command": "find ${VAR:Directory path:.} -name \"${VAR:File pattern}\"",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-5",
+    "name": "Find Large Files",
+    "command": "find ${VAR:Directory path:.} -type f -size +${VAR:Size:100M}",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-6",
+    "name": "Process List",
+    "command": "ps aux",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-7",
+    "name": "Kill Process by PID",
+    "command": "kill -9 ${VAR:Process ID}",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-8",
+    "name": "Kill Process by Name",
+    "command": "pkill ${VAR:Process name}",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-9",
+    "name": "Network Connections",
+    "command": "netstat -tuln",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-10",
+    "name": "Check Port",
+    "command": "lsof -i :${VAR:Port number}",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-11",
+    "name": "Change Permissions",
+    "command": "chmod ${VAR:Permissions:755} ${VAR:File or directory}",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-12",
+    "name": "Change Owner",
+    "command": "chown ${VAR:User}:${VAR:Group} ${VAR:File or directory}",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-13",
+    "name": "System Info",
+    "command": "uname -a",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-14",
+    "name": "Memory Usage",
+    "command": "free -h",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-15",
+    "name": "Top Processes",
+    "command": "top",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-16",
+    "name": "Grep in Files",
+    "command": "grep -r \"${VAR:Search pattern}\" ${VAR:Directory path:.}",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-17",
+    "name": "Tail Log File",
+    "command": "tail -f ${VAR:Log file path}",
+    "description": "",
+    "category": "System"
+  },
+  {
+    "id": "sys-18",
+    "name": "Create Symbolic Link",
+    "command": "ln -s ${VAR:Target path} ${VAR:Link name}",
+    "description": "",
+    "category": "System"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "git-1",
+    "name": "Git Status",
+    "command": "git status",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-2",
+    "name": "Git Add All",
+    "command": "git add .",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-3",
+    "name": "Git Commit",
+    "command": "git commit -m \"${VAR:Commit message}\"",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-4",
+    "name": "Git Push",
+    "command": "git push",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-5",
+    "name": "Git Pull",
+    "command": "git pull",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-6",
+    "name": "Git Checkout Branch",
+    "command": "git checkout ${VAR:Branch name}",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-7",
+    "name": "Git Create Branch",
+    "command": "git checkout -b ${VAR:New branch name}",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-8",
+    "name": "Git Branch List",
+    "command": "git branch -a",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-9",
+    "name": "Git Log",
+    "command": "git log --oneline --graph --decorate -${VAR:Number of commits:10}",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-10",
+    "name": "Git Diff",
+    "command": "git diff",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-11",
+    "name": "Git Stash",
+    "command": "git stash save \"${VAR:Stash message}\"",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-12",
+    "name": "Git Stash Pop",
+    "command": "git stash pop",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-13",
+    "name": "Git Merge",
+    "command": "git merge ${VAR:Branch to merge}",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-14",
+    "name": "Git Reset Soft",
+    "command": "git reset --soft HEAD~${VAR:Number of commits:1}",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-15",
+    "name": "Git Tag",
+    "command": "git tag -a ${VAR:Tag name} -m \"${VAR:Tag message}\"",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-16",
+    "name": "Git Clone",
+    "command": "git clone ${VAR:Repository URL}",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-17",
+    "name": "Git Remote",
+    "command": "git remote -v",
+    "description": "",
+    "category": "Git"
+  },
+  {
+    "id": "git-18",
+    "name": "Git Fetch",
+    "command": "git fetch --all",
+    "description": "",
+    "category": "Git"
+  }
+]
