@@ -82,6 +82,10 @@ These variables are automatically resolved when the snippet is executed:
 | `${HOUR}` | Current hour (00-23) | `echo "Hour: ${HOUR}"` |
 | `${MINUTE}` | Current minute (00-59) | `echo "Minute: ${MINUTE}"` |
 | `${USERLOGIN}` | System username | `echo "User: ${USERLOGIN}"` |
+| `${GIT_BRANCH}` | Current Git branch | `echo "Branch: ${GIT_BRANCH}"` |
+| `${GIT_COMMIT}` | Current commit hash (full) | `echo "Commit: ${GIT_COMMIT}"` |
+| `${GIT_COMMIT_SHORT}` | Current commit hash (short) | `git tag v1.0-${GIT_COMMIT_SHORT}` |
+| `${GIT_REMOTE}` | Git remote URL | `echo "Remote: ${GIT_REMOTE}"` |
 
 ### Interactive Variables
 
@@ -109,6 +113,13 @@ gradlew clean build
 cd ${PROJECT_PATH}
 mvn clean ${CHOICE:Select phase:package|install|deploy}
 echo "Deployed by ${USERLOGIN} at ${TIME}"
+```
+
+**Git-aware build:**
+```bash
+echo "Building ${PROJECT_NAME} from branch ${GIT_BRANCH}"
+echo "Commit: ${GIT_COMMIT_SHORT}"
+gradlew build -Pversion=${GIT_BRANCH}-${GIT_COMMIT_SHORT}
 ```
 
 **Conditional execution:**
