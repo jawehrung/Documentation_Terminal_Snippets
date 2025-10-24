@@ -1,7 +1,7 @@
 # Terminal Snippets
 
 <!-- Plugin description -->
-Terminal Snippets is an IntelliJ IDEA plugin that allows you to quickly inject predefined command snippets into the terminal.
+Terminal Snippets is an plugin that allows you to quickly inject predefined command snippets into the terminal.
 
 ## Features
 
@@ -28,8 +28,8 @@ Terminal Snippets is an IntelliJ IDEA plugin that allows you to quickly inject p
 
 ### Manual Installation
 
-1. Download the latest `Terminal-Snippets-X.X.X.zip` from the [releases page](https://github.com/jawehrung/Terminal_Snippets/releases/latest)
-2. Open IntelliJ IDEA
+1. Download the latest `Terminal-Snippets-X.X.X.zip` from [my Jetbrains MarketPlace Page](https://plugins.jetbrains.com/vendor/jawehrung)
+2. Open your Jetbrains IDE
 3. Go to <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd>
 4. Click the <kbd>⚙️</kbd> icon > <kbd>Install Plugin from Disk...</kbd>
 5. Select the downloaded ZIP file
