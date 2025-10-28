@@ -69,7 +69,11 @@ These variables are automatically resolved when the snippet is executed:
 |----------|-------------|----------|
 | `${PROJECT_NAME}` | Current project name | `echo "Building ${PROJECT_NAME}"` |
 | `${PROJECT_PATH}` | Current project path | `cd ${PROJECT_PATH}` |
+| `${MODULE_NAME}` | Current module name | `./gradlew :${MODULE_NAME}:test` |
 | `${FILE_PATH}` | Currently open file path | `cat ${FILE_PATH}` |
+| `${FILE_NAME}` | Current file name | `javac ${FILE_NAME}` |
+| `${FILE_DIR}` | Current file directory | `cd ${FILE_DIR}` |
+| `${PACKAGE_NAME}` | Package name (Java/Kotlin) | `echo "Package: ${PACKAGE_NAME}"` |
 | `${SELECTION}` | Selected text in editor | `echo "${SELECTION}"` |
 | `${CLIPBOARD}` | Clipboard content | `echo ${CLIPBOARD}` |
 | `${DATE}` | Current date (dd/MM/yyyy) | `echo "Build date: ${DATE}"` |
@@ -82,10 +86,19 @@ These variables are automatically resolved when the snippet is executed:
 | `${HOUR}` | Current hour (00-23) | `echo "Hour: ${HOUR}"` |
 | `${MINUTE}` | Current minute (00-59) | `echo "Minute: ${MINUTE}"` |
 | `${USERLOGIN}` | System username | `echo "User: ${USERLOGIN}"` |
+| `${USER_HOME}` | User home directory | `cp config ${USER_HOME}/.ssh/` |
+| `${OS_NAME}` | Operating system name | `echo "OS: ${OS_NAME}"` |
+| `${ENVVAR:VAR_NAME}` | Environment variable value | `echo "Path: ${ENVVAR:PATH}"` |
+| `${GIT_ROOT}` | Git repository root | `cd ${GIT_ROOT}` |
 | `${GIT_BRANCH}` | Current Git branch | `echo "Branch: ${GIT_BRANCH}"` |
 | `${GIT_COMMIT}` | Current commit hash (full) | `echo "Commit: ${GIT_COMMIT}"` |
 | `${GIT_COMMIT_SHORT}` | Current commit hash (short) | `git tag v1.0-${GIT_COMMIT_SHORT}` |
 | `${GIT_REMOTE}` | Git remote URL | `echo "Remote: ${GIT_REMOTE}"` |
+| `${GIT_USER_NAME}` | Git user name | `echo "Author: ${GIT_USER_NAME}"` |
+| `${GIT_USER_EMAIL}` | Git user email | `echo "Email: ${GIT_USER_EMAIL}"` |
+| `${GIT_TAG_LATEST}` | Latest Git tag | `echo "Version: ${GIT_TAG_LATEST}"` |
+| `${GRADLE_VERSION}` | Gradle version | `echo "Gradle ${GRADLE_VERSION}"` |
+| `${MAVEN_VERSION}` | Maven project version | `echo "Maven ${MAVEN_VERSION}"` |
 
 ### Interactive Variables
 
@@ -128,6 +141,40 @@ echo "Delete all logs?"
 if [ "${CONFIRM:Are you sure?}" = "yes" ]; then
   rm -rf logs/*
 fi
+```
+
+**Using environment variables:**
+```bash
+echo "Java Home: ${ENVVAR:JAVA_HOME}"
+echo "Path: ${ENVVAR:PATH}"
+docker run -e API_KEY=${ENVVAR:API_KEY} myapp
+```
+
+**File operations:**
+```bash
+# Compile current file
+javac ${FILE_DIR}/${FILE_NAME}
+java ${PACKAGE_NAME}.${FILE_NAME%.java}
+
+# Backup to home
+cp ${FILE_PATH} ${USER_HOME}/backup/${FILE_NAME}
+```
+
+**Multi-module project:**
+```bash
+# Test specific module
+./gradlew :${MODULE_NAME}:test
+
+# Build with version from Git
+cd ${GIT_ROOT}
+./gradlew :${MODULE_NAME}:build -Pversion=${GIT_TAG_LATEST}
+```
+
+**Cross-platform script:**
+```bash
+echo "Running on ${OS_NAME}"
+echo "Gradle version: ${GRADLE_VERSION}"
+echo "Built by ${GIT_USER_NAME} <${GIT_USER_EMAIL}>"
 ```
 
 ## Default Snippets
