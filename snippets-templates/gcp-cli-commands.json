@@ -1,0 +1,177 @@
+[
+  {
+    "id": "gcp-1",
+    "name": "GCP Login",
+    "command": "gcloud auth login",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-2",
+    "name": "GCP List Projects",
+    "command": "gcloud projects list",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-3",
+    "name": "GCP Set Project",
+    "command": "gcloud config set project ${VAR:Project ID}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-4",
+    "name": "GCP Get Current Project",
+    "command": "gcloud config get-value project",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-5",
+    "name": "GCP List Compute Instances",
+    "command": "gcloud compute instances list",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-6",
+    "name": "GCP Start Instance",
+    "command": "gcloud compute instances start ${VAR:Instance name} --zone=${VAR:Zone:us-central1-a}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-7",
+    "name": "GCP Stop Instance",
+    "command": "gcloud compute instances stop ${VAR:Instance name} --zone=${VAR:Zone:us-central1-a}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-8",
+    "name": "GCP SSH to Instance",
+    "command": "gcloud compute ssh ${VAR:Instance name} --zone=${VAR:Zone:us-central1-a}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-9",
+    "name": "GCP List Storage Buckets",
+    "command": "gcloud storage buckets list",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-10",
+    "name": "GCP Create Storage Bucket",
+    "command": "gcloud storage buckets create gs://${VAR:Bucket name} --location=${VAR:Location:us-central1}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-11",
+    "name": "GCP List Bucket Contents",
+    "command": "gcloud storage ls gs://${VAR:Bucket name}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-12",
+    "name": "GCP Copy to Bucket",
+    "command": "gcloud storage cp ${VAR:Local file} gs://${VAR:Bucket name}/${VAR:Destination path}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-13",
+    "name": "GCP List GKE Clusters",
+    "command": "gcloud container clusters list",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-14",
+    "name": "GCP Get GKE Credentials",
+    "command": "gcloud container clusters get-credentials ${VAR:Cluster name} --zone=${VAR:Zone:us-central1-a}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-15",
+    "name": "GCP List Cloud Functions",
+    "command": "gcloud functions list",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-16",
+    "name": "GCP Deploy Cloud Function",
+    "command": "gcloud functions deploy ${VAR:Function name} --runtime=${VAR:Runtime:python39} --trigger-http --allow-unauthenticated",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-17",
+    "name": "GCP List App Engine Services",
+    "command": "gcloud app services list",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-18",
+    "name": "GCP Deploy App Engine",
+    "command": "gcloud app deploy",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-19",
+    "name": "GCP List Cloud SQL Instances",
+    "command": "gcloud sql instances list",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-20",
+    "name": "GCP List IAM Service Accounts",
+    "command": "gcloud iam service-accounts list",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-21",
+    "name": "GCP Set Region",
+    "command": "gcloud config set compute/region ${VAR:Region:us-central1}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-22",
+    "name": "GCP Set Zone",
+    "command": "gcloud config set compute/zone ${VAR:Zone:us-central1-a}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-23",
+    "name": "GCP List Configurations",
+    "command": "gcloud config configurations list",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-24",
+    "name": "GCP Describe Instance",
+    "command": "gcloud compute instances describe ${VAR:Instance name} --zone=${VAR:Zone:us-central1-a}",
+    "description": "",
+    "category": "GCP"
+  },
+  {
+    "id": "gcp-25",
+    "name": "GCP List Firewall Rules",
+    "command": "gcloud compute firewall-rules list",
+    "description": "",
+    "category": "GCP"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "azure-1",
+    "name": "Azure Login",
+    "command": "az login",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-2",
+    "name": "Azure Account Show",
+    "command": "az account show",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-3",
+    "name": "Azure List Subscriptions",
+    "command": "az account list --output table",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-4",
+    "name": "Azure Set Subscription",
+    "command": "az account set --subscription ${VAR:Subscription ID}",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-5",
+    "name": "Azure List Resource Groups",
+    "command": "az group list --output table",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-6",
+    "name": "Azure Create Resource Group",
+    "command": "az group create --name ${VAR:Resource group name} --location ${VAR:Location:eastus}",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-7",
+    "name": "Azure Delete Resource Group",
+    "command": "az group delete --name ${VAR:Resource group name} --yes",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-8",
+    "name": "Azure List VMs",
+    "command": "az vm list --output table",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-9",
+    "name": "Azure Start VM",
+    "command": "az vm start --resource-group ${VAR:Resource group} --name ${VAR:VM name}",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-10",
+    "name": "Azure Stop VM",
+    "command": "az vm stop --resource-group ${VAR:Resource group} --name ${VAR:VM name}",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-11",
+    "name": "Azure List Storage Accounts",
+    "command": "az storage account list --output table",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-12",
+    "name": "Azure Create Storage Account",
+    "command": "az storage account create --name ${VAR:Storage account name} --resource-group ${VAR:Resource group} --location ${VAR:Location:eastus} --sku Standard_LRS",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-13",
+    "name": "Azure List Containers",
+    "command": "az storage container list --account-name ${VAR:Storage account name} --output table",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-14",
+    "name": "Azure Upload Blob",
+    "command": "az storage blob upload --account-name ${VAR:Storage account name} --container-name ${VAR:Container name} --name ${VAR:Blob name} --file ${VAR:Local file}",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-15",
+    "name": "Azure List AKS Clusters",
+    "command": "az aks list --output table",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-16",
+    "name": "Azure Get AKS Credentials",
+    "command": "az aks get-credentials --resource-group ${VAR:Resource group} --name ${VAR:Cluster name}",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-17",
+    "name": "Azure List App Services",
+    "command": "az webapp list --output table",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-18",
+    "name": "Azure Deploy Web App",
+    "command": "az webapp deployment source config-zip --resource-group ${VAR:Resource group} --name ${VAR:App name} --src ${VAR:Zip file}",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-19",
+    "name": "Azure List Functions",
+    "command": "az functionapp list --output table",
+    "description": "",
+    "category": "Azure"
+  },
+  {
+    "id": "azure-20",
+    "name": "Azure List SQL Servers",
+    "command": "az sql server list --output table",
+    "description": "",
+    "category": "Azure"
+  }
+]

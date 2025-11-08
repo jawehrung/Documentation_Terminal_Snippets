@@ -22,6 +22,32 @@ Terminal Snippets is an plugin that allows you to quickly inject predefined comm
 3. Click the **Terminal Snippets** icon in the terminal toolbar
 4. Select a snippet to inject it into the terminal
 
+## Thematic commands packages ready to install
+- 20 Predefined packages for popular developer tasks and tools : ([Github](https://github.com/jawehrung/Documentation_Terminal_Snippets/tree/master/snippets-templates))
+  - AWS CLI Commands
+  - Azure CLI Commands
+  - Compression Commands
+  - Docker Commands
+  - Dotnet Commands
+  - GCP CLI Commands
+  - Git Commands
+  - Go Commands
+  - Gradle Commands
+  - Kubernetes Commands
+  - Maven Commands
+  - Mongodb Commands
+  - MySQL Commands
+  - Npm Commands
+  - PostgreSQL Commands
+  - Python Commands
+  - Rust Commands
+  - Ssh Commands
+  - System Monitoring Commands
+  - Terraform Commands
+
+- One-click installation of multiple commands snippets
+- Save time configuring your favorite terminal commands
+
 <!-- Plugin description end -->
 
 ## Installation
